@@ -23,13 +23,21 @@ h1 {
   font-size: 65px;
   color: orange;
   font-family: sans-serif;
+  text-align: center;
 }
 
 ul {
   background-color: green;
 }
+
 .bgColor {
   background-color: greenyellow;
   font-weight: 600;
   font-size: 3em;
+  font-style: italic;
+  text-decoration: underline;
+}
+
+li {
+  line-height: 20px;
 }
