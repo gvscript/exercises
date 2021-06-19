@@ -41,3 +41,7 @@ ul {
 li {
   line-height: 20px;
 }
+
+#amarelo {background-color: yellow;}
+#vermelho {background-color: red;}
+#marrom {background-color: brown;}
