@@ -7,6 +7,8 @@ const task (value) => {
   );
 }
 
+const tarefas = ['Fazer os exercícios do conteúdo', 'Tirar dúvidas de React', 'Estudar conteúdo de amanhã']
+
 function App() {
   return (
     
