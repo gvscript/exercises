@@ -1,10 +1,14 @@
+import React from 'react';
+import SobreMim from './component';
 import './App.css';
-import SobreMim from './Component';
+
+
+
 
 function App() {
   return (
     <SobreMim/>
-  );
+  )
 }
 
 export default App;

@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 
 class SobreMim extends Component {
-  reader() {
-    const header= (
+  render() {
+    const header = (
       <header className='flex-container'>
         <div>
           <h1>Gabriel Viana</h1>
-          <p>Apaixonado por histórias de pessoas reais</p>
+          <p>Apaixonado por histórias de vidas reais</p>
         </div>
       </header>
     )
@@ -14,4 +14,4 @@ class SobreMim extends Component {
   }
 }
 
-export default SobreMim;
+export default SobreMim
