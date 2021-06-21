@@ -1,8 +1,10 @@
-import logo from './logo.svg';
 import './App.css';
+import SobreMim from './Component';
 
 function App() {
-  return ();
+  return (
+    <SobreMim/>
+  );
 }
 
 export default App;

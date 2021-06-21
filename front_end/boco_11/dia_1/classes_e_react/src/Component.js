@@ -10,5 +10,8 @@ class SobreMim extends Component {
         </div>
       </header>
     )
+    return header
   }
 }
+
+export default SobreMim;
