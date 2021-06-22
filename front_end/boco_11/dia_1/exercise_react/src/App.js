@@ -8,12 +8,10 @@ const task = (value) => {
 }
 
 const tarefas = ['Fazer os exercícios do conteúdo', 'Tirar dúvidas de React', 'Estudar conteúdo de amanhã']
-const oi = 'oi'
+
 function App() {
   return (
-    <div>
-      
-    </div>
+    <ol>{tarefas.map((tarefa) => task(tarefa))}</ol>
   );
 }
 
