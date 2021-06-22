@@ -1,14 +1,14 @@
 import React from 'react';
 
 class Order extends React.Component {
-  reader() {
+  render() {
     const { user, product, price } = this.props.order;
 
-    return(
-      <div>
+    return (
+      <div className="order">
         <p> {user} bought {product} for {price.value} {price.currency} </p>
       </div>
-    )
+    );
   }
 }
 
