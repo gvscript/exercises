@@ -34,4 +34,6 @@ class App extends React.Component {
   }
 }
 
+{/* O que o componente App é em relação a Order ?
+ R. Component App é pai do component Order */}
 export default App;
