@@ -7,8 +7,8 @@ class App extends React.Component {
     const users = [
       {
         id: 102,
-        name: "João",
-        email: "joao@gmail.com",
+        name: "Angeli",
+        email: "angeli@gmail.com",
         avatar: "https://i.pinimg.com/originals/74/69/85/746985ab750d62c9605322b2fef77184.jpg"
       },
       {
