@@ -7,7 +7,7 @@ import './App.css';
 class App extends Component {
   render() {
     return (
-      <section>
+      <section className='app-container'>
         <Header />
         <Pokedex pokemons={ pokemons }/>
       </section>
