@@ -3,7 +3,13 @@ import './App.css';
 
 class App extends Component {
   render() {
-    return ();
+    return (
+      <section>
+        <button>Botão 1</button>
+        <button>Botão 2</button>
+        <button>Botão 3</button>
+      </section>
+    );
 
   }
 }
