@@ -17,18 +17,22 @@ class App extends Component {
   }
 
   hendleClick1() {
-    
-    console.log('Botão 1 ok');
+    this.setState({
+      numeroCliques1: 1
+    })
+  
   }
 
   hendleClick2() {
-    
-    console.log('Botão 2 ok');
+    this.setState({
+      numeroCliques2: 1
+    })
   }
 
   hendleClick3() {
-    
-    console.log('Botão 3 ok')
+    this.setState({
+      numeroCliques3: 1
+    })
   }
 
   render() {
