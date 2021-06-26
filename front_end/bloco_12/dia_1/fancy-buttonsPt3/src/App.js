@@ -14,13 +14,16 @@ class App extends Component {
     this.hendleClick1 = this.hendleClick1.bind(this);
     this.hendleClick2 = this.hendleClick2.bind(this);
     this.hendleClick3 = this.hendleClick3.bind(this);
+    this.hendleClick1Color = this.hendleClick1Color.bind(this);
   };
 
   hendleClick1() {
     this.setState((numAnterior, _props) => ({
       numClick1: numAnterior.numClick1 +1
+      
     }));
   };
+
 
   hendleClick2() {
     this.setState((numAnterior, _props) => ({
