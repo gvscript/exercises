@@ -15,9 +15,9 @@ class App extends Component {
   render() {
     return (
       <section>
-        <button>Botão 1</button>
-        <button>Botão 2</button>
-        <button>Botão 3</button>
+        <button onClick={ handleClick1 }>Botão 1</button>
+        <button onClick={ handleClick2 }>Botão 2</button>
+        <button onClick={ handleClick3 }>Botão 3</button>
       </section>
     );
 
