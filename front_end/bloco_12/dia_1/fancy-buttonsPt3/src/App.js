@@ -5,6 +5,12 @@ class App extends Component {
   constructor() {
     super()
 
+    this.state = {
+      numeroCliques1: 0,
+      numeroCliques2: 0,
+      numeroCliques3: 0,
+    }
+
     this.hendleClick1 = this.hendleClick1.bind(this);
     this.hendleClick2 = this.hendleClick2.bind(this);
     this.hendleClick3 = this.hendleClick3.bind(this);
@@ -26,6 +32,7 @@ class App extends Component {
   }
 
   render() {
+    console.log(this);
     return(
       <section>
         <button onClick={ this.hendleClick1 }>Botão 1</button>
