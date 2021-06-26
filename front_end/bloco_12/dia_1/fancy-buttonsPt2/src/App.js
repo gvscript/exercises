@@ -1,38 +1,38 @@
 import React, { Component } from 'react';
 import './App.css';
 
-
 class App extends Component {
   constructor() {
     super()
-      this.handleClick1 = this.handleClick1.bind(this);
-      this.handleClick2 = this.handleClick2.bind(this);
-      this.handleClick3 = this.handleClick3.bind(this);
+
+    this.hendleClick1 = this.hendleClick1.bind(this);
+    this.hendleClick2 = this.hendleClick2.bind(this);
+    this.hendleClick3 = this.hendleClick3.bind(this);
   }
 
-  handleClick2() {
-    console.log(this)
-    console.log('Botão 2 ok');
-  };
-  handleClick3() {
-    console.log(this)
-    console.log('Botão 3 ok');
-  };
-  handleClick1() {
-    console.log(this)
+  hendleClick1() {
+    console.log(this);
     console.log('Botão 1 ok');
-  };
+  }
+
+  hendleClick2() {
+    console.log(this);
+    console.log('Botão 2 ok');
+  }
+
+  hendleClick3() {
+    console.log(this);
+    console.log('Botão 3 ok')
+  }
 
   render() {
-    // console.log(this);
-    return (
+    return(
       <section>
-        <button onClick={ this.handleClick1 }>Botão 1</button>
-        <button onClick={ this.handleClick2 }>Botão 2</button>
-        <button onClick={ this.handleClick3 }>Botão 3</button>
+        <button onClick={ this.hendleClick1 }>Botão 1</button>
+        <button onClick={ this.hendleClick2 }>Botão 2</button>
+        <button onClick={ this.hendleClick3 }>Botão 3</button>
       </section>
-    );
-
+    )
   }
 }
 
