@@ -17,31 +17,31 @@ class App extends Component {
   }
 
   hendleClick1() {
-    this.setState({
-      numeroCliques1: 1
-    })
+    this.setState((numAnterior, _props) => ({
+      numeroCliques1: numAnterior.numeroCliques1 + 1
+    }));
   
   }
 
   hendleClick2() {
-    this.setState({
-      numeroCliques2: 1
-    })
+    this.setState((numAnterior, _props) => ({
+      numeroCliques2: numAnterior.numeroCliques2 + 1
+    }))
   }
 
   hendleClick3() {
-    this.setState({
-      numeroCliques3: 1
-    })
+    this.setState((numAnterior, _props) => ({
+      numeroCliques3: numAnterior.numeroCliques3 + 1
+    }))
   }
 
   render() {
     console.log(this);
     return(
       <section>
-        <button onClick={ this.hendleClick1 }>Botão 1</button>
-        <button onClick={ this.hendleClick2 }>Botão 2</button>
-        <button onClick={ this.hendleClick3 }>Botão 3</button>
+        <button onClick={ this.hendleClick1 }>B1 - clicou { this.state.numeroCliques1 }</button>
+        <button onClick={ this.hendleClick2 }>B2 - clicou { this.state.numeroCliques2 }</button>
+        <button onClick={ this.hendleClick3 }>B3 - clicou { this.state.numeroCliques3 }</button>
       </section>
     )
   }
