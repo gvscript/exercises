@@ -1,18 +1,19 @@
 import React, { Component } from 'react';
 import './App.css';
 
-function handleClick1() {
-  console.log('Botão 1 ok');
-};
 function handleClick2() {
   console.log('Botão 2 ok');
 };
 function handleClick3() {
   console.log('Botão 3 ok');
 };
+function handleClick1() {
+  console.log('Botão 1 ok');
+};
 
 class App extends Component {
   render() {
+    console.log(this);
     return (
       <section>
         <button onClick={ handleClick1 }>Botão 1</button>
