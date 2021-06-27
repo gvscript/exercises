@@ -5,9 +5,19 @@ class Form extends Component {
   constructor() {
     super()
 
+    this.hendleChangeTextArea = this.hendleChangeTextArea.bind(this);
+
+    this.state = {
+      sobreVoce: '',
+      idade: 0,
+      aceite: false,
+    }
     console.log();
   };
 
+  hendleChangeTextArea(e) {
+    this.setState({ sobreVoce: e.target.value });
+  }
 
 
   render() {
@@ -17,15 +27,19 @@ class Form extends Component {
         <form className='form'>
           <label htmlFor="">
             Sobre você:
-            <textarea name="" />
+            <textarea 
+              name="sobreVoce" 
+              value={ this.state.sobreVoce } 
+              onChange={ this.hendleChangeTextArea }
+            />
           </label>
           <input 
-            type="number" 
-            name="" 
+            type='number'
+            name="idade" 
           />
           <input 
             type="checkbox" 
-            name=""
+            name="aceite"
           />
         </form>
       </section>
