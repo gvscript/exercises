@@ -8,6 +8,7 @@ class Form extends Component {
     this.hendleChangeTextArea = this.hendleChangeTextArea.bind(this);
 
     this.state = {
+      estado: '',
       sobreVoce: '',
       idade: 0,
       aceite: false,
@@ -25,26 +26,27 @@ class Form extends Component {
       <section>
         <h1>Formulário em React</h1>
         <form className='form'>
-          <select>
-            <label htmlFor="">
-              Sobre você:
-              <textarea 
-                name="sobreVoce" 
-                value={ this.state.sobreVoce } 
-                onChange={ this.hendleChangeTextArea }
-              />
-            </label>
-            <input 
-              type='number'
-              name="idade" 
-            />
-            <input 
-              type="checkbox" 
-              name="aceite"
-            />
+          <select name="estado">
+            <option value="sp">São Paulo</option>
+            <option value="bh">Belo Horizonte</option>
           </select>
+          <input 
+            type='number'
+            name="idade" 
+          />
+          <input 
+            type="checkbox" 
+            name="aceite"
+          />
+          <label htmlFor="">
+            Sobre você:
+            <textarea 
+              name="sobreVoce" 
+              value={ this.state.sobreVoce } 
+              onChange={ this.hendleChangeTextArea }
+            />
+          </label>
         </form>
-
       </section>
     )
   }
