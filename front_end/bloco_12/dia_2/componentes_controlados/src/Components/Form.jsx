@@ -25,23 +25,26 @@ class Form extends Component {
       <section>
         <h1>Formulário em React</h1>
         <form className='form'>
-          <label htmlFor="">
-            Sobre você:
-            <textarea 
-              name="sobreVoce" 
-              value={ this.state.sobreVoce } 
-              onChange={ this.hendleChangeTextArea }
+          <select>
+            <label htmlFor="">
+              Sobre você:
+              <textarea 
+                name="sobreVoce" 
+                value={ this.state.sobreVoce } 
+                onChange={ this.hendleChangeTextArea }
+              />
+            </label>
+            <input 
+              type='number'
+              name="idade" 
             />
-          </label>
-          <input 
-            type='number'
-            name="idade" 
-          />
-          <input 
-            type="checkbox" 
-            name="aceite"
-          />
+            <input 
+              type="checkbox" 
+              name="aceite"
+            />
+          </select>
         </form>
+
       </section>
     )
   }
