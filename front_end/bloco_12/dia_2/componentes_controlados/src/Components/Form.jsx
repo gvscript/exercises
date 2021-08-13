@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import SobreVoce from './SobreVoce';
 import './Form.css'
 
 class Form extends Component {
@@ -43,7 +44,7 @@ class Form extends Component {
             onChange={ this.hendleChenge }
           />
           <input 
-            placeholder='Informe sua idade'
+            placeholder='Quantos anos vocẽ tem?'
             type="number" 
             name="idade"
             value={ this.state.idade }
@@ -54,14 +55,9 @@ class Form extends Component {
             <option value="sp">São Paulo</option>
             <option value="bh">Belo Horizonte</option>
           </select>
-          <label htmlFor="">
-            <p>Sobre você:</p>
-            <textarea 
-              name="sobreVoce"
-              value={ this.state.sobreVoce }
-              onChange={ this.hendleChenge }
-            />
-          </label>
+
+          <SobreVoce value={ this.state.sobreVoce } hendleChange={ this.hendleChenge } />
+
           <label htmlFor="">
             Confirma todos os dados?
             <input 
